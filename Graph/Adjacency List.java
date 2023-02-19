@@ -21,13 +21,13 @@ public static void DFSTraversal(List<List<Integer>> edges, int n) {
             graph.get(v).add(u);
         }
   
-  for(List<Integer>graph : grph){
-   
-    for(int i=0; i<grph.size(); i++){
-      System.out.print(grph(i)+" ");
-    }
-    System.out.println();
-  }
+  for (int i = 0; i < graph.size(); i++) {
+            System.out.print(i + ": ");
+            for (int j : graph.get(i)) {
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
   
 }
   
