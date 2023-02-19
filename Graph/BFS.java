@@ -25,8 +25,8 @@ class Graph {
         adjList[v].add(w);
      
     }
- 
-    void BFS(int x) {
+ //In BFS, we go level by level 
+   void BFS(int x) {
          boolean[] visited = new boolean[vertices];
         LinkedList<Integer> queue = new LinkedList<Integer>();
         
