@@ -14,39 +14,52 @@ class Graph {
     public int vertices;
     public ArrayList<Integer>[] adjList;
  
+ //Constructor
     Graph(int v) {
         this.vertices = v+1;
         adjList = new ArrayList[v+1];
         
+     //create empty list to add connected edges of each node
         for (int i = 0; i <= v; i++) adjList[i] = new ArrayList<Integer>();
     }
  
+ //adding edges src-->des
     void addEdge(int v, int w) {
         adjList[v].add(w);
-     
     }
+ 
  //In BFS, we go level by level 
+ // r m* w* a
    void BFS(int x) {
+    
          boolean[] visited = new boolean[vertices];
+    
         LinkedList<Integer> queue = new LinkedList<Integer>();
-        
-        visited[x] = true;
+       
         queue.add(x);
         
         while(queue.size() != 0) {
+         //Remove
             x = queue.poll();
-            System.out.print(x + " ");
+         
+         //Mark*
+         visited[x] = true;
+         
+         //Work*
+         System.out.print(x + " ");
             
-            for(int i : adjList[x]) {
-                if(!visited[i]) {
-                    visited[i] = true;
-                    queue.add(i);
-                }
+         //Add not visited to que
+         for(int i : adjList[x]) {
+             if(!visited[i]) {
+                visited[i] = true;
+                  queue.add(i);                }
             }
         }
     }
 }
  
+//input section
+
 public class Main {
     public static void main(String args[]) {
         
