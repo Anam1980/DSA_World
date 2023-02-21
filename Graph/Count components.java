@@ -62,3 +62,17 @@ class Solution {
         System.out.println(ob.components(adj,N));
     }
 }
+
+/*Example 1
+Input
+
+3
+1 1 0
+1 1 0
+0 0 1 
+Output
+
+2
+Explanation
+
+The graph has two components. [1, 2], and [3].*/
