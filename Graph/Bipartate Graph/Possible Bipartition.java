@@ -1,6 +1,6 @@
 //A Bipartate Graph in which vertices distributed in a two set such that one set having the vertices are connected to the another set vertices.
 //Basically, same set doesn't contain connected vertices.
-//it is used to model customer and market, buyers and sellers, users and system.
+//it is used to model relation between buyers and sellers in market place, users and item.
 //for ex. one set of tasks and another set of robot and edge between them is representes the compatibility between robots and task, such that which task allocated to which robo, 
 //means task assign to that robot if there is a edge between them.
 //**Used to model Allocation of Resources/Tasks to agent/worker.
