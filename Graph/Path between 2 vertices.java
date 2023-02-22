@@ -74,8 +74,8 @@ class Solution {
 
 	    //add all element vice-versa
 		for(List<Integer> e : Edges){
-			int u=e.get(0)-1;
-			int v=e.get(1)-1;
+			int u=e.get(0);
+			int v=e.get(1);
 
 			graph.get(u).add(v);
 			graph.get(v).add(u);
