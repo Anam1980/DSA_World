@@ -1,7 +1,10 @@
+
+
 import java.io.*;
 import java.util.*;
 import java.lang.*;
 
+//---------------------------------------------------DIJKSTRA ALGO------------------------------------//
 public class Main {
 	
 	static class Pair{
@@ -54,7 +57,9 @@ public class Main {
 	  }
 	   return visited;
   }
-
+	
+//--------------------------------------------INPUT SECTION------------------------------------------------//
+	
   public static void main(String args[]) throws IOException {
 
         BufferedReader read =
