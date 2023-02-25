@@ -29,7 +29,8 @@ public class Main {
 		}
     
 		TreeNode node=new TreeNode(post[idx--]);
-
+		
+		//go right because we iterating from right to left i.e.0<--n L R Root
 		node.right=constructTree(post, node.val, ub);
 		node.left=constructTree(post, lb, node.val);
 
@@ -39,7 +40,7 @@ public class Main {
   
     public static TreeNode CreateTree(int n,int[] postOrder) {
       
-		idx=n-1;
+     idx=n-1;
     TreeNode ans=constructTree(postOrder, Integer.MIN_VALUE, Integer.MAX_VALUE);
 		return ans;
       
