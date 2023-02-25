@@ -1,6 +1,7 @@
 import java.util.*;
 
 class Solution {
+	//node-->node upto depth
 	 public static void dfsHelper(int node, List<List<Integer>> graph, boolean[] visited) {
         // Mark the current node as visited
         visited[node] = true;
