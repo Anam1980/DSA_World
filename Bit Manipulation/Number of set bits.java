@@ -13,6 +13,18 @@ class Solution {
 		return cnt;
     }
 }
+/----------------------------BRIAN'S KERNIGHAN'S ALGO------------------------------------//
+   public int setBits(int n) {
+       int cnt=0;
+		while(n>0){
+			cnt++;
+
+			//every right 1 removes if we & with prev 
+			n=((n & (n-1)));
+		}
+
+		return cnt;
+    }
 
 public class Main {
 
