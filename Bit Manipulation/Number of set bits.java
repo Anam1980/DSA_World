@@ -13,7 +13,7 @@ class Solution {
 		return cnt;
     }
 }
-/----------------------------BRIAN'S KERNIGHAN'S ALGO------------------------------------//
+//----------------------------BRIAN'S KERNIGHAN'S ALGO------------------------------------//
    public int setBits(int n) {
        int cnt=0;
 		while(n>0){
