@@ -10,9 +10,10 @@ Your task is to complete the function singleElement which receives the array A a
 import java.util.*;
 
 class Solution {
-    public void singleElement(int[]A,int n) {
+   public void singleElement(int[]A,int n) {
         int ans=0;
-		
+		//n^n=0-->Even => 0
+		//n^n^n=n-->Odd => n
 		for(int i=0; i<n; i++){
 			ans=(ans^A[i]);
 		}
