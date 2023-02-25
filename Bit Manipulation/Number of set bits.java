@@ -1,19 +1,22 @@
 import java.util.*;
 
 class Solution {
+//TC:O(log N)
     public int setBits(int n) {
        int cnt=0;
 		while(n>0){
 			//if it is set then cnt
 			if((n & 1)==1)cnt++;
 			//shift by 1 
-			n>>=1;
+			n>>=1;  //n/2
 		}
 
 		return cnt;
     }
 }
 //----------------------------BRIAN'S KERNIGHAN'S ALGO------------------------------------//
+
+//TC:O(cnt)
    public int setBits(int n) {
        int cnt=0;
 		while(n>0){
