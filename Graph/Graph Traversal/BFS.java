@@ -7,6 +7,8 @@
 
 //The Second line of test case contains E space separated pairs u and v denoting that there is a edge from u to v .
 
+//parent-->child 
+
 import java.util.*;
 import java.io.*;
  
