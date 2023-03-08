@@ -83,11 +83,11 @@ class Solution
         
         
         
-        int cnt=1;//we take 1 meeting in cnt
+        int cnt=0;//we take 1 meeting in cnt
         
-        int limit = meets.get(0).end;//limit acc to 1 meeting
+        int limit = 0;//limit acc to 1 meeting
         
-        for(int i=1; i<n; i++){
+        for(int i=0; i<n; i++){
             //check that start > limit then we take that meerting
             if(meets.get(i).start > limit){
                 cnt++;
