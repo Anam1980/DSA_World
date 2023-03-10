@@ -19,6 +19,7 @@ class Solution {
             //update maxSum
             maxSum = Math.max(maxSum, prevSum);
         }
+     
         return maxSum;
     }
 }
