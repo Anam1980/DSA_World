@@ -24,6 +24,7 @@ class Solution
        }
        
        return minAll;
+        
     }
 }
 //TC-O(N*LOG N) SC-O(1)
