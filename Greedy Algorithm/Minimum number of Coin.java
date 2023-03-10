@@ -4,7 +4,7 @@ Find the minimum number of coins and/or notes needed to make the change for Rs N
 import java.io.*;
 import java.util.*;
 
-//Tc:O(N) SC:O(N)
+//Tc:O(N * M) SC:O(N)
 class Solution{
 	static int[]dem=new int[]{ 1, 2, 5, 10, 20, 50, 100, 500};
 
