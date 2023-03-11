@@ -17,5 +17,6 @@ class Solution
         int sum=min+max;
         
         return sum;
+        
     }
 }
