@@ -3,7 +3,7 @@ You task is to find the number of elements of nums[] in range [l,r] which occur 
 
 class Solution
 {
-    
+    //T:O(n^2)  SC:O(n)>>>>>>BRUTE FORCE<<<<<<<<<<<<<<<<<<<<<<<<
     public int[] solveQueries(int[] nums, int[][] Queries, int k)
     {
         // Code here 
