@@ -29,7 +29,7 @@ class Solution {
                 st=mid+1;	
             }
             else{
-                end=mid;
+                end=mid-1;
                 
             }
         }
