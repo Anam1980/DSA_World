@@ -1,12 +1,12 @@
-Computers and Data--
-A company has a collection of computers working together for sharing data with each other.
-There are total n computers and they are numbered from '0' to 'n-1'. 
-The arrangement of computers follows a hierarchy and information can only travel down the hierarchy.
-The main server is to spread an important information across all the computers of the company and each computer can send the information to the directly connected computers just below their hierarchy.
-An array represents integers where computer[i] is the direct upper level computer for the computer i.
-If the computer[i] = -1, then ith computer is the main server.
-The information starts spreading from the main server and an array reqTime stores the time required by the ith computer to spread information to each of it's directly connected computers one level down their hierarchy. 
-Find out the total time required to spread the information to all the computers in this architecture.
+// Computers and Data--
+// A company has a collection of computers working together for sharing data with each other.
+// There are total n computers and they are numbered from '0' to 'n-1'. 
+// The arrangement of computers follows a hierarchy and information can only travel down the hierarchy.
+// The main server is to spread an important information across all the computers of the company and each computer can send the information to the directly connected computers just below their hierarchy.
+// An array represents integers where computer[i] is the direct upper level computer for the computer i.
+// If the computer[i] = -1, then ith computer is the main server.
+// The information starts spreading from the main server and an array reqTime stores the time required by the ith computer to spread information to each of it's directly connected computers one level down their hierarchy. 
+// Find out the total time required to spread the information to all the computers in this architecture.
 
 import java.util.Arrays;
 
