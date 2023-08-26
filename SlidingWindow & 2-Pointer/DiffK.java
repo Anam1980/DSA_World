@@ -5,26 +5,25 @@ import java.io.*;
 public class Main
 {
 	public static int diffk(int[]arr,int k,int n){
-		if(n<2)return 0;
-		
-		int i = 0; 
-		int j = n-1;
-
-		while(i<j){
-			int val = Math.abs((int)(arr[i]-arr[j]));
-
-			if(val == k)return 1;
-			
-			if(val<k){
-				//need large
+		int i=0;
+		int j=1;
+		while(i<n && j<n){
+			int diff=arr[j]-arr[i];
+			if(diff>k){
 				i++;
 			}
-			else{
-				//need less
-				j--;
+			else if(diff<k){
+				j++;
 			}
+			else{
+				if(i!=j)return 1;
+
+				j++;//as mustbj >i
+					
+			}
+			
 		}
-		return 0;//for false,not a case valid
+		return 0;//for false,not amy case valid
 	}
 	public static void main (String[] args) throws java.lang.Exception
 	{
