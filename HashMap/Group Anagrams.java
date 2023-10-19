@@ -23,6 +23,12 @@ class Solution {
             mapo.get(s).add(str);
         }
 
-        return new ArrayList<>(mapo.values()); 
+       List<List<String>> ans=new ArrayList<>();
+		for(Map.Entry mapElements:mapo.entrySet()){
+            List<String> list=(List)mapElements.getValue();
+            ans.add(list);
+        }
+		Collections.sort(ans, new CustomComparator());
+		return ans;
     }
 }
