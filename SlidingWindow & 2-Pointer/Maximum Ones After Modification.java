@@ -1,36 +1,22 @@
-import java.util.*;
-import java.lang.*;
-import java.io.*;
+class Solution {
+    public int longestOnes(int[] nums, int k) {
+        int zero=0;
+        int lonArr=0;
+        int st = 0;
+        int end = 0;
 
-public class Main
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-                Scanner sc=new Scanner(System.in);
-		int n=sc.nextInt();
-                int []arr=new int[n];
-                for(int i=0;i<n;i++){
-                        arr[i]=sc.nextInt();
-                }
-                int b=sc.nextInt();
+        while(end<nums.length){
+            if(nums[end]==0)zero++;
 
-		int zeros=0;int res=0,start=0, end=0;
-            while(start<n && end<n){
-				if(arr[end]==0)zeros++;
-				
-				while(zeros>b && start<=end){
-					if(arr[start]==0)zeros--;
-					start++;
-				}
+            while(zero>k && st<=end){
+                if(nums[st]==0)zero--;
+                st++;
+            }
+             lonArr = Math.max(lonArr, (end-st+1));
 
-				res=Math.max(res, (end-start+1));
+            end++;
+        }
 
-				end++;
-				
-			}
-			
-				 
-		System.out.print(res);
-	}
-		
+        return lonArr;
+    }
 }
