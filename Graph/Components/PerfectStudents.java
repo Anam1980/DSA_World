@@ -78,6 +78,6 @@ public class Main {
          graph[v2].add(new Edge(v2, v1));
       }
       System.out.println(Solution.perfectStudents(n, graph));
-   }
+   } 
 
 }
